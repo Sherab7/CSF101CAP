@@ -41,11 +41,17 @@ def calculate_perfect_score(game_results):
             perfect_score += 1 if outcome == "X" else 5 if outcome == "Y" else 9
         else:
             perfect_score += 2 if outcome == "X" else 6 if outcome == "Y" else 7
-  
+    # Return the perfect score
     return perfect_score
 
+# Provide the actual file path
+file_path = 'input_7_cap1.txt'
 
-file_path = 'input_7_cap1.txt'                # Provide the actual file path
+# Read game results from the file
 game_results = read_game_results(file_path)
+
+# Calculate perfect score based on game results
 perfect_score = calculate_perfect_score(game_results)
-print("Final Score:", perfect_score)          # Print the final perfect score
+
+# Print the final perfect score
+print("Final Score:", perfect_score)
