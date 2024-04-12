@@ -4,9 +4,9 @@
 # Your Student ID Number: 02230117
 ################################
 # REFERENCES
-# Links that you referred while solving
-# the problem
-# http://link.to.an.article/video.com
+# https://www.dataquest.io/blog/read-file-python/#:~:text=Python%20provides%20a%20built%2Din,we%20can%20manipulate%20its%20content
+# https://youtu.be/jM281ESajTs?si=zjNYmQGo6AGAiqMo
+# https://youtu.be/1Y9F0yQLM2A?si=fwUeYIjOvGXtBMQU 
 ################################
 # SOLUTION
 # Your Solution Score:50169
