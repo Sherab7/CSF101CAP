@@ -17,20 +17,17 @@
 def read_game_results(file_path):
     # Initialize an empty list to store game results
     game_results = []
-    # Open the input file in read mode
+    
     with open(file_path, 'r') as input_file:
-        # Iterate through each line in the file
         for line in input_file:
-            # Split the line into figure and outcome
-            figure, outcome = line.strip().split()
-            # Append the figure and outcome as a tuple to the game_results list
+            figure, outcome = line.strip().split()           
             game_results.append((figure, outcome))
-    # Return the list of game results
+   
     return game_results
 
 # Function to calculate the perfect score based on game results
 def calculate_perfect_score(game_results):
-    # Initialize perfect score to 0
+   
     perfect_score = 0
     # Iterate through each game result
     for figure, outcome in game_results:
@@ -41,17 +38,10 @@ def calculate_perfect_score(game_results):
             perfect_score += 1 if outcome == "X" else 5 if outcome == "Y" else 9
         else:
             perfect_score += 2 if outcome == "X" else 6 if outcome == "Y" else 7
-    # Return the perfect score
+   
     return perfect_score
 
-# Provide the actual file path
-file_path = 'input_7_cap1.txt'
-
-# Read game results from the file
+file_path = 'input_7_cap1.txt'          # Provide the actual file path
 game_results = read_game_results(file_path)
-
-# Calculate perfect score based on game results
-perfect_score = calculate_perfect_score(game_results)
-
-# Print the final perfect score
-print("Final Score:", perfect_score)
+perfect_score = calculate_perfect_score(game_results)  # Calculate perfect score based on game results
+print("Final Score:", perfect_score)  # Print the final perfect score
